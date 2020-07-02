@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { TopRatedMoviesListComponent } from './components/top-rated-movies-list/top-rated-movies-list.component';
-import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
-import { ActorDetailComponent } from './components/actor-detail/actor-detail.component';
-import { SearchFormComponent } from './components/search-form/search-form-detail.component';
+import { TopRatedMoviesListComponent } from './top-rated-movies-list/top-rated-movies-list.component';
+import { MovieDetailComponent } from './movie-detail/movie-detail.component';
+import { ActorDetailComponent } from './actor-detail/actor-detail.component';
+import { SearchFormComponent } from './search-form/search-form.component';
 
 
 const routes: Routes = [
