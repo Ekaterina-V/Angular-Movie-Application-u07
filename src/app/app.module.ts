@@ -18,7 +18,8 @@ import { AppRoutingModule } from './app-routing.module';
     MovieDetailComponent,
     ActorDetailComponent,
     SearchFormComponent,
-    SearchResultComponent
+    SearchResultComponent,
+  
   ],
   imports: [
     BrowserModule,
