@@ -12,7 +12,7 @@ const routes: Routes = [
 { path: 'moviedetail', component: MovieDetailComponent, data: { title: 'Movie Detail' } },
 { path: 'actors', component: ActorDetailComponent, data: { title: 'Actors' } }, 
 { path: 'search', component: SearchFormComponent, data: { title: 'Search' } },
-{ path: '', redirectTo: '/topmovies' }
+{ path: '', redirectTo: '/topmovies', pathMatch: 'full' }
 ];
 
 @NgModule({
