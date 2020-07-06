@@ -9,6 +9,9 @@ import { ActorDetailComponent } from './actor-detail/actor-detail.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { SearchResultComponent } from './search-result/search-result.component';
 import { AppRoutingModule } from './app-routing.module';
+import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FavouriteMoviesComponent } from './favourite-movies/favourite-movies.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { AppRoutingModule } from './app-routing.module';
     ActorDetailComponent,
     SearchFormComponent,
     SearchResultComponent,
+    FooterComponent,
+    NavbarComponent,
+    FavouriteMoviesComponent,
   
   ],
   imports: [

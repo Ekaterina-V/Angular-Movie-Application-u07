@@ -119,6 +119,15 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-movie-app"
+    }
+  },
+  "defaultProject": "angular-movie-app",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    },
+    "@nrwl/schematics:component": {
+      "styleext": "scss"
+    }
+  }
 }
