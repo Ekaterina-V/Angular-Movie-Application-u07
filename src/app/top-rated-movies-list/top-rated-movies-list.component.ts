@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-//import { Movie } from '../top-rated-movies-list.services';
+import { Movie } from '../movie';
 
 @Component({
   selector: 'app-top-rated-movies-list',
@@ -9,11 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopRatedMoviesListComponent implements OnInit {
 
-  title:string;
+  title: string = "Top rated movies";
 
   constructor() { }
 
   ngOnInit(): void {
   }
+
+   
+  
 
 }
