@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FavouriteMoviesComponent } from './favourite-movies/favourite-movies.component';
+import { MovieService } from './movie.service';
 
 @NgModule({
   declarations: [
@@ -25,13 +26,16 @@ import { FavouriteMoviesComponent } from './favourite-movies/favourite-movies.co
     FooterComponent,
     NavbarComponent,
     FavouriteMoviesComponent,
+    FavouriteMoviesComponent,
   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    MovieService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

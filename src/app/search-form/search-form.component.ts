@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MovieService } from '../movie.service';
+import { Movie } from '../movie';
+import { Actor } from '../actor';
+
 
 @Component({
   selector: 'app-search-form',
@@ -7,9 +11,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchFormComponent implements OnInit {
 
-  constructor() { }
+  movies: Movie[];
+
+  actors: Actor[];
+
+
+  constructor(private movieService: MovieService) { }
 
   ngOnInit(): void {
+  
   }
+
+
 
 }

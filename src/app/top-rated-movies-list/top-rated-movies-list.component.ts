@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MovieService } from '../movie.service';
 import { Movie } from '../movie';
 
 @Component({
@@ -11,12 +11,13 @@ export class TopRatedMoviesListComponent implements OnInit {
 
   title: string = "Top rated movies";
 
-  constructor() { }
+  movies: Movie;
+
+  constructor(private movieService: MovieService) { }
 
   ngOnInit(): void {
+   this.getTopRatedMovies();
   }
 
-   
-  
 
 }

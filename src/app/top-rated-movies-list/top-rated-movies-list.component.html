@@ -1,12 +1,8 @@
 <div class="top-rated-movies container">
   <h1 *ngIf="title" class="title top-rated ">{{ title }}</h1>
 
-  
-
-
-
-
-
-
+  <ul>
+    <li *ngFor="let movie of movies">{{movie.title}}</li>
+  </ul>
 
 </div>
