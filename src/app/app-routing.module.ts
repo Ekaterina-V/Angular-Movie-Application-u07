@@ -5,13 +5,17 @@ import { TopRatedMoviesListComponent } from './top-rated-movies-list/top-rated-m
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { ActorDetailComponent } from './actor-detail/actor-detail.component';
 import { SearchFormComponent } from './search-form/search-form.component';
+import { FavouriteMoviesComponent } from './favourite-movies/favourite-movies.component';
+import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
+{ path: 'home', component: HomeComponent, data: { title: 'Home' } },
 { path: 'topmovies', component: TopRatedMoviesListComponent, data: { title: 'Top Rated Movies' } },
 { path: 'moviedetail', component: MovieDetailComponent, data: { title: 'Movie Detail' } },
-{ path: 'actors', component: ActorDetailComponent, data: { title: 'Actors' } }, 
+{ path: 'actor', component: ActorDetailComponent, data: { title: 'Person' } }, 
 { path: 'search', component: SearchFormComponent, data: { title: 'Search' } },
+{ path: 'favourite-movies', component: FavouriteMoviesComponent , data: { title: 'Favourite Movies' } },
 { path: '', redirectTo: '/topmovies', pathMatch: 'full' }
 ];
 

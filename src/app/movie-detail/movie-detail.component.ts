@@ -13,7 +13,6 @@ export class MovieDetailComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.getTopRateMovie();
   }
 
 }

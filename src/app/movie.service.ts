@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Movie } from '../movie';
-import { Actor } from '../actors';
+import { Actor } from '../actor';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +19,7 @@ https://api.themoviedb.org/3/movie/top_rated?api_key=${this.apiKey}&language=en-
   }
 
   getActor(): Observable<Actor[]> {
-    return of (ACTOR);
+    return of (ACTORS);
   }
 
 
