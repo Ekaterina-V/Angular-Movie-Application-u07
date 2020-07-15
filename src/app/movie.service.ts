@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { Movie } from '../movie';
 import { Actor } from '../actors';
 
@@ -13,8 +14,14 @@ https://api.themoviedb.org/3/movie/top_rated?api_key=${this.apiKey}&language=en-
 
   constructor() { }
 
-  getTopRatedMovie() {
-    
+  getTopRatedMovies(): Movie []  {
+    return MOVIES;
   }
+
+  getActor(): Observable<Actor[]> {
+    return of (ACTOR);
+  }
+
+
 
 }

@@ -13,11 +13,17 @@ export class TopRatedMoviesListComponent implements OnInit {
 
   movies: Movie;
 
+
   constructor(private movieService: MovieService) { }
 
-  ngOnInit(): void {
-   this.getTopRatedMovies();
-  }
+
+    //getTopRatedMovies(): void {
+    //  this.movies = this.movieService.//getTopRatedMovies();
+    //}
+
+    //ngOnInit(): void {
+    //  this.getTopRatedMovies();
+  //}
 
 
 }

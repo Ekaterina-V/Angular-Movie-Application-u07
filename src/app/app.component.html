@@ -1,9 +1,21 @@
 
- <h1>{{title}}</h1>
- 
- <app-navbar></app-navbar>
+ <header>
+   <div class="header">
+      <h1>{{title}}</h1>
+   </div>
+ </header>
 
-  <app-search-form></app-search-form>
+ <nav>
+    <app-navbar class="navbar-item navbar-menu"></app-navbar>
+    <app-search-form class="navbar-item navbar-search"></app-search-form>
+ </nav>
 
- <router-outlet></router-outlet>
- <app-footer></app-footer>
+<main>
+  <div class="top-rated">
+    <app-top-rated-movies-list></app-top-rated-movies-list>
+  </div>
+</main>
+
+
+<router-outlet></router-outlet>
+<app-footer></app-footer>

@@ -1,8 +1,13 @@
-<div class="top-rated-movies container">
-  <h1 *ngIf="title" class="title top-rated ">{{ title }}</h1>
+<div class="top-rated-movies container" *ngFor="let movie of movies">
 
-  <ul>
-    <li *ngFor="let movie of movies">{{movie.title}}</li>
-  </ul>
-
+  <li lass="movie-container top-rated">
+    <div class="movie-link">
+        <img class="poster" src=movie.poster>
+        <span class="title"> {{title | uppercase}}</span>
+        <span class="reliase-date">{{release_date}}</span>
+      <a routerLink routerLink="{{movie.id}}">
+      </a>
+    </div>
+  </li>
 </div>
+

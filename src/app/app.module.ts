@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+//import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopRatedMoviesListComponent } from './top-rated-movies-list/top-rated-movies-list.component';
@@ -27,6 +28,7 @@ import { MovieService } from './movie.service';
     NavbarComponent,
     FavouriteMoviesComponent,
     FavouriteMoviesComponent,
+    //FormsModule,
   
   ],
   imports: [
@@ -34,7 +36,7 @@ import { MovieService } from './movie.service';
     AppRoutingModule
   ],
   providers: [
-    MovieService
+    MovieService,
   ],
   bootstrap: [AppComponent]
 })
