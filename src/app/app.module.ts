@@ -1,19 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-//import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopRatedMoviesListComponent } from './top-rated-movies-list/top-rated-movies-list.component';
 import { HomeComponent } from './home/home.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
-import { ActorDetailComponent } from './actor-detail/actor-detail.component';
-import { SearchFormComponent } from './search-form/search-form.component';
-import { SearchResultComponent } from './search-result/search-result.component';
+//import { ActorDetailComponent } from './actor-detail/actor-detail.component';
+import { MovieSearchComponent } from './movie-search/movie-search.component';
 import { AppRoutingModule } from './app-routing.module';
-import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { FavouriteMoviesComponent } from './favourite-movies/favourite-movies.component';
+//import { FavouriteMoviesComponent } from './favourite-movies/favourite-movies.component';
 import { MovieService } from './movie.service';
+import { ActorSearchComponent } from './actor-search/actor-search.component';
 
 @NgModule({
   declarations: [
@@ -21,19 +21,18 @@ import { MovieService } from './movie.service';
     TopRatedMoviesListComponent,
     HomeComponent,
     MovieDetailComponent,
-    ActorDetailComponent,
-    SearchFormComponent,
-    SearchResultComponent,
-    FooterComponent,
+    //ActorDetailComponent,
+    MovieSearchComponent,
     NavbarComponent,
-    FavouriteMoviesComponent,
-    FavouriteMoviesComponent,
-    //FormsModule,
+    //FavouriteMoviesComponent,
+    ActorSearchComponent,
   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [
     MovieService,

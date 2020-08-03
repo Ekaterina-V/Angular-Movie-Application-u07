@@ -1,10 +1,33 @@
-export class Movie {
+export interface MovieResult {
+  poster_path: string | null;
+  adult: boolean;
+  overview: string;
+  release_date: string;
+  genre_ids: number[];
   id: number;
-  title:string;
-  reliase_date: string;
-  director: string;
-  poster: string;
-  movie_rating: number;
-  genres: any;
-  runtime: number;
+  original_title: string;
+  original_language: string;
+  title: string;
+  backdrop_path: string | null;
+  popularity: number;
+  vote_count: number;
+  video: boolean;
+  vote_average: number;
+}
+
+export interface MovieResponse {
+  page: number;
+  results: MovieResult[];
+  total_results: number;
+  total_pages: number;
+}
+
+export interface MovieDetail {
+  title: string;
+  budget: number;
+  id: number;
+  poster_path: string | null;
+  popularity: number;
+  release_date: string;
+  vote_average: number;
 }

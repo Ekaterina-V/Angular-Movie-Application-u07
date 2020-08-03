@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../movie.service';
-import { Movie } from '../movie';
+import { MovieResponse } from '../movie';
 
 @Component({
   selector: 'app-top-rated-movies-list',
@@ -9,21 +9,18 @@ import { Movie } from '../movie';
 })
 export class TopRatedMoviesListComponent implements OnInit {
 
-  title: string = "Top rated movies";
-
-  movies: Movie;
-
+  title: string = "Top rated movies here";
+  response: MovieResponse;
 
   constructor(private movieService: MovieService) { }
 
+  ngOnInit(): void {
+    this.getTopRatedMovies();
+  }
 
-    //getTopRatedMovies(): void {
-    //  this.movies = this.movieService.//getTopRatedMovies();
-    //}
-
-    //ngOnInit(): void {
-    //  this.getTopRatedMovies();
-  //}
-
-
+  getTopRatedMovies(): void {
+    this.movieService.getTopRatedMovies()
+    // clone the data object, using its known shape
+    .subscribe((data: MovieResponse) => this.response = { ...data });
+  }
 }

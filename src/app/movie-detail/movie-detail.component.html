@@ -1,1 +1,9 @@
-<p>movie-detail works!</p>
+<div *ngIf="movie">
+  <h1>{{movie.title | uppercase}}</h1>
+  <img src="https://image.tmdb.org/t/p/w300{{movie.poster_path}}">
+  <div>id:{{movie.id}}</div>
+  <div>budget: {{movie.budget}}</div>
+  <div>popularity:{{movie.popularity}}</div>
+  <div>reliase date:{{movie.release_date}}</div>
+  <div>vote average:{{movie.vote_average}}</div>
+</div>

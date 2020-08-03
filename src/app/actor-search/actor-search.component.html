@@ -1,0 +1,17 @@
+<h1>Actor Search</h1>
+
+<form #searchForm="ngForm" (ngSubmit)="onSubmit(searchForm)">
+  <input name="actor" type="text" placeholder="Search actor" required ngModel />
+  <button type="submit">Search</button>
+</form>
+
+<div *ngIf="results">
+  <ul class="search-result">
+    <li *ngFor="let result of results">
+      {{result.id}}, {{result.name}}
+      <!--<a routerLink="/detail/{{result.id}}">
+        {{result.name}}
+      </a>-->
+    </li>
+  </ul>
+</div>
