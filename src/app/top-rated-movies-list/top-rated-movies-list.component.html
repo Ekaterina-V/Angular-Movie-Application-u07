@@ -1,4 +1,4 @@
-<p> Welcome! What's Popular now: </p>
+<p id="top"> Welcome! What's Popular now: </p>
 
 <div *ngIf="response">
   <div class="top-rated-movies">
@@ -7,8 +7,10 @@
         <img class="poster" src="https://image.tmdb.org/t/p/w200{{result.poster_path}}">
         <span class="title" id=title>Title:{{result.title}}</span>
       </a>
-      <span class="rating">Rating:{{result.vote_average}}</span>
+        <span class="rating">Rating:{{result.vote_average}}</span>
         <span class="release-date">Released:{{result.release_date}}</span>
     </div>
   </div>
-</div>
+  </div>
+
+

@@ -56,6 +56,13 @@ export class MovieService {
       );
   }
 
+    getActorDetail(id: number) {
+    return this.httpClient.get(`${this.url}/person/${id}?${this.api_key}`)
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
+
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
       // A client-side or network error occurred. Handle it accordingly.

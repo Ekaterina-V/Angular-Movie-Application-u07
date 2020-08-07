@@ -23,7 +23,7 @@ export class ActorSearchComponent implements OnInit {
       .subscribe((data: any) => this.results = data.results.map((el: any) => {
         return {
           id: el.id,
-          name: el.name
+          name: el.name,
         }
       }));
   }

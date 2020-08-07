@@ -3,11 +3,12 @@
 <input #searchBox id="search-box" (input)="search(searchBox.value)" />
 
 <div *ngIf="response">
-  <ul class="search-result">
-    <li *ngFor="let result of response.results">
+  <div class="search-result">
+    <div class="movie-details" *ngFor="let result of response.results">
       <a routerLink="/moviedetail/{{result.id}}">
+      <img class="poster" src="https://image.tmdb.org/t/p/w200{{result.poster_path}}">
         {{result.id}}, {{result.title}}
       </a>
-    </li>
-  </ul>
+    </div>
+  </div>
 </div>

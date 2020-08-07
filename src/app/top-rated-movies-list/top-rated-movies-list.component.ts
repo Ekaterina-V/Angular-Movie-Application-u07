@@ -24,3 +24,5 @@ export class TopRatedMoviesListComponent implements OnInit {
     .subscribe((data: MovieResponse) => this.response = { ...data });
   }
 }
+
+ 

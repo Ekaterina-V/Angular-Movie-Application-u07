@@ -8,10 +8,10 @@
 <div *ngIf="results">
   <ul class="search-result">
     <li *ngFor="let result of results">
-      {{result.id}}, {{result.name}}
-      <!--<a routerLink="/detail/{{result.id}}">
+      {{result.id}}
+      <a routerLink="/actordetail/{{result.id}}">
         {{result.name}}
-      </a>-->
+      </a>
     </li>
   </ul>
 </div>

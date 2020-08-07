@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MovieDetail } from '../movie';
-import { ActivatedRoute } from '@angular/router'; // содержит информацию о маршруте связанную с компонентом, который загружен в outlet
+import { ActivatedRoute } from '@angular/router'; 
 import { MovieService } from '../movie.service';
 
 @Component({

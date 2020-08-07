@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { TopRatedMoviesListComponent } from './top-rated-movies-list/top-rated-movies-list.component';
 import { HomeComponent } from './home/home.component';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
-//import { ActorDetailComponent } from './actor-detail/actor-detail.component';
+import { ActorDetailComponent } from './actor-detail/actor-detail.component';
 import { MovieSearchComponent } from './movie-search/movie-search.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -21,7 +21,7 @@ import { ActorSearchComponent } from './actor-search/actor-search.component';
     TopRatedMoviesListComponent,
     HomeComponent,
     MovieDetailComponent,
-    //ActorDetailComponent,
+    ActorDetailComponent,
     MovieSearchComponent,
     NavbarComponent,
     //FavouriteMoviesComponent,
