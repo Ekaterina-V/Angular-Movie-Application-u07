@@ -14,8 +14,8 @@ export class MovieService {
  
   constructor(private httpClient: HttpClient) { }
 
-  getTopRatedMovies() : Observable<MovieResponse> {
-    return this.httpClient.get<MovieResponse>(`${this.url}/movie/top_rated?${this.api_key}`)
+  getTopRatedMovies(page: number) : Observable<MovieResponse> {
+    return this.httpClient.get<MovieResponse>(`${this.url}/movie/top_rated?${this.api_key}&page=${page}`)
       .pipe(
         catchError(this.handleError)
       );

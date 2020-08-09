@@ -1,5 +1,12 @@
 <p id="top"> Welcome! What's Popular now: </p>
 
+<div class="page">
+  <button (click)="prevPage()">Previous page</button>
+  {{page}}
+  <button (click)="nextPage()">Next page</button>
+</div>
+
+
 <div *ngIf="response">
   <div class="top-rated-movies">
     <div class="movie-details" *ngFor="let result of response.results">
@@ -11,6 +18,10 @@
         <span class="release-date">Released:{{result.release_date}}</span>
     </div>
   </div>
-  </div>
+</div>
 
-
+<div class="page">
+  <button (click)="prevPage()">Previous page</button>
+  {{page}}
+  <button (click)="nextPage()">Next page</button>
+</div>
