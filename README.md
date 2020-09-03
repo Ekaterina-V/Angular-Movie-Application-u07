@@ -10,7 +10,7 @@ Angular Movie Application allows the use to:
 
 
 ## Capture
-
+[![Movie Application](https://github.com/Ekaterina-V/u07_angular_movie_app/blob/master/src/assets/Capture.png)]
 
 ## Development server
 
