@@ -1,7 +1,16 @@
-# u07_angular_movie_app
-# AngularMovieApp
+# Angular Movie Application
 
+Angular Movie Application was built as my student assignment at Chas Academy.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
+
+Angular Movie Application allows the use to:
+- Search movies by title and actors by name
+- Click on a result to see more details
+- Scroll through a list of current popular movies
+
+
+## Capture
+
 
 ## Development server
 
