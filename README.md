@@ -10,7 +10,16 @@ Angular Movie Application allows the use to:
 
 
 ## Capture
-[![Movie Application](https://github.com/Ekaterina-V/u07_angular_movie_app/blob/master/src/assets/Capture.png)]
+Movie Application:
+![Movie Application](https://github.com/Ekaterina-V/u07_angular_movie_app/blob/master/src/assets/Capture.png)
+Movie Search:
+![Movie Search](https://github.com/Ekaterina-V/u07_angular_movie_app/blob/master/src/assets/Movie%20search.png)
+Movie Details:
+![Movie Details](https://github.com/Ekaterina-V/u07_angular_movie_app/blob/master/src/assets/Movie%20result.png)
+Actor Search:
+![Actor Search](https://github.com/Ekaterina-V/u07_angular_movie_app/blob/master/src/assets/Actor%20search.png)
+
+
 
 ## Development server
 
